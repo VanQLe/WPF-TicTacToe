@@ -54,3 +54,17 @@ C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\obj\D
 C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
 C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
 C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\MainWindow.g.cs
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\App.g.cs
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.cache
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe_MarkupCompile.lref
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\MainWindow.baml
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.g.resources
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache

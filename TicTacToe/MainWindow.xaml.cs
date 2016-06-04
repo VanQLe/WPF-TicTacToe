@@ -116,28 +116,28 @@ namespace TicTacToe
 
         private void GameBoardSection00_Click(object sender, RoutedEventArgs e)
         {
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection00.Content = P1Img;
+                GameBoardSection00.Content = GetStackPanelO();
                 game.board[0, 0] = 1;
             }
             else
             {
-                GameBoardSection00.Content = P2Img;
+                GameBoardSection00.Content = GetStackPanelX();
                 game.board[0, 0] = 2;
             }
 
@@ -149,28 +149,28 @@ namespace TicTacToe
         private void GameBoardSection01_Click(object sender, RoutedEventArgs e)
         {
 
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection01.Content = P1Img;
+                GameBoardSection01.Content = GetStackPanelO();
                 game.board[0, 1] = 1;
             }
             else
             {
-                GameBoardSection01.Content = P2Img;
+                GameBoardSection01.Content = GetStackPanelX();
                 game.board[0, 1] = 2;
             }
 
@@ -181,28 +181,28 @@ namespace TicTacToe
 
         private void GameBoardSection02_Click(object sender, RoutedEventArgs e)
         {
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection02.Content = P1Img;
+                GameBoardSection02.Content = GetStackPanelO();
                 game.board[0, 2] = 1;
             }
             else
             {
-                GameBoardSection02.Content = P2Img;
+                GameBoardSection02.Content = GetStackPanelX();
                 game.board[0, 2] = 2;
             }
 
@@ -213,28 +213,28 @@ namespace TicTacToe
 
         private void GameBoardSection10_Click(object sender, RoutedEventArgs e)
         {
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection10.Content = P1Img;
+                GameBoardSection10.Content = GetStackPanelO();
                 game.board[1, 0] = 1;
             }
             else
             {
-                GameBoardSection10.Content = P2Img;
+                GameBoardSection10.Content = GetStackPanelX();
                 game.board[1, 0] = 2;
             }
 
@@ -246,28 +246,28 @@ namespace TicTacToe
 
         private void GameBoardSection11_Click(object sender, RoutedEventArgs e)
         {
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection11.Content = P1Img;
+                GameBoardSection11.Content = GetStackPanelO();
                 game.board[1, 1] = 1;
             }
             else
             {
-                GameBoardSection11.Content = P2Img;
+                GameBoardSection11.Content = GetStackPanelX();
                 game.board[1, 1] = 2;
             }
 
@@ -278,28 +278,28 @@ namespace TicTacToe
 
         private void GameBoardSection12_Click(object sender, RoutedEventArgs e)
         {
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection12.Content = P1Img;
+                GameBoardSection12.Content = GetStackPanelO();
                 game.board[1, 2] = 1;
             }
             else
             {
-                GameBoardSection12.Content = P2Img;
+                GameBoardSection12.Content = GetStackPanelX();
                 game.board[1, 2] = 2;
             }
 
@@ -310,28 +310,28 @@ namespace TicTacToe
 
         private void GameBoardSection20_Click(object sender, RoutedEventArgs e)
         {
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection20.Content = P1Img;
+                GameBoardSection20.Content = GetStackPanelO();
                 game.board[2, 0] = 1;
             }
             else
             {
-                GameBoardSection20.Content = P2Img;
+                GameBoardSection20.Content = GetStackPanelX();
                 game.board[2, 0] = 2;
             }
 
@@ -343,28 +343,28 @@ namespace TicTacToe
         private void GameBoardSection21_Click(object sender, RoutedEventArgs e)
         {
 
-            var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            //var X = new Image();
+            //X.Source = new BitmapImage(new Uri(@"\Resources\PlayerO.png"));
+            //var P1Img = new StackPanel();
+            //P1Img.Orientation = Orientation.Horizontal;
+            //P1Img.Margin = new Thickness(10);
+            //P1Img.Children.Add(X);
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection21.Content = P1Img;
+                GameBoardSection21.Content = GetStackPanelO();
                 game.board[2, 1] = 1;
             }
             else
             {
-                GameBoardSection21.Content = P2Img;
+                GameBoardSection21.Content = GetStackPanelX();
                 game.board[2, 1] = 2;
             }
 
@@ -383,23 +383,23 @@ namespace TicTacToe
             //P1Img.Margin = new Thickness(10);
             //P1Img.Children.Add(X);
 
-            var P1Img = GetStackPanel();
+            //var P1Img = GetStackPanel();
 
-            var Y = new Image();
-            Y.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
-            var P2Img = new StackPanel();
-            P2Img.Orientation = Orientation.Horizontal;
-            P2Img.Margin = new Thickness(10);
-            P2Img.Children.Add(Y);
+            //var Y = new Image();
+            //Y.Source = new BitmapImage(new Uri(@"\Resources\PlayerX.png"));
+            //var P2Img = new StackPanel();
+            //P2Img.Orientation = Orientation.Horizontal;
+            //P2Img.Margin = new Thickness(10);
+            //P2Img.Children.Add(Y);
 
             if (player1turn)
             {
-                GameBoardSection22.Content = P1Img;
+                GameBoardSection22.Content = GetStackPanelO();
                 game.board[2, 2] = 1;
             }
             else
             {
-                GameBoardSection22.Content = P2Img;
+                GameBoardSection22.Content = GetStackPanelX();
                 game.board[2, 2] = 2;
             }
 
@@ -408,17 +408,29 @@ namespace TicTacToe
             updateGameStatus();
         }
 
-        public StackPanel GetStackPanel()
+        public StackPanel GetStackPanelX()
         {
             var X = new Image();
-            X.Source = new BitmapImage(new Uri(@"C:\Users\User1\Desktop\Van C# Programs\Tic Tac Toe\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
-            var P1Img = new StackPanel();
-            P1Img.Orientation = Orientation.Horizontal;
-            P1Img.Margin = new Thickness(10);
-            P1Img.Children.Add(X);
+            X.Source = new BitmapImage(new Uri(@"\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\Resources\PlayerX.png"));
+            var PXImg = new StackPanel();
+            PXImg.Orientation = Orientation.Horizontal;
+            PXImg.Margin = new Thickness(10);
+            PXImg.Children.Add(X);
 
-            return P1Img;
+            return PXImg;
+
         }
-       
+        public StackPanel GetStackPanelO()
+        {
+            var X = new Image();
+            X.Source = new BitmapImage(new Uri(@"\\Mac\Home\Desktop\C# Programs\WPF-TicTacToe\TicTacToe\Resources\PlayerO.png"));
+            var PXImg = new StackPanel();
+            PXImg.Orientation = Orientation.Horizontal;
+            PXImg.Margin = new Thickness(10);
+            PXImg.Children.Add(X);
+
+            return PXImg;
+        }
+
     }
 }
