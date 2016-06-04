@@ -15,13 +15,13 @@
               HorizontalAlignment="Left"
               VerticalAlignment="Top">
             <Grid.RowDefinitions>
-                <RowDefinition Height="231*" />
-                <RowDefinition Height="68*" />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Grid.Background>
                 <ImageBrush ImageSource="/Resources/Background.jpg" Opacity="0.30" />
             </Grid.Background>
-            <Grid Grid.RowSpan="2"
+
+            <Grid x:Name="GameBoardGrid"
                   Width="360"
                   Height="279"
                   Margin="68,10,69,10"
@@ -39,24 +39,20 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Resources/Board.gif" Opacity=".50" />
                 </Grid.Background>
-                <StackPanel>
-                    <Button x:Name="GameBoardSection00"
+                <Button x:Name="GameBoardSection00"
                         Width="116"
                         Height="94"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
-                        Opacity="0.0" Click="GameBoardSection00_Click" 
-                        >
-                    </Button>
-                    <Image HorizontalAlignment="Stretch" Loaded="GameBoardSection00_Click"/>
-
-                </StackPanel>
+                        Click="GameBoardSection00_Click"
+                        Opacity="0.0" />
                 <Button x:Name="GameBoardSection02"
                         Grid.Column="2"
                         Width="124"
                         Height="94"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
+                        Click="GameBoardSection02_Click"
                         Opacity="0.0" />
                 <Button x:Name="GameBoardSection01"
                         Grid.Row="0"
@@ -65,14 +61,30 @@
                         Height="94"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
+                        Click="GameBoardSection01_Click"
                         Opacity="0.0" />
                 <Button x:Name="GameBoardSection10"
                         Grid.Row="1"
+                        Grid.RowSpan="2"
                         Grid.Column="0"
+                        Grid.ColumnSpan="2"
                         Width="116"
                         Height="94"
+                        Margin="3,0,0,0"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
+                        Click="GameBoardSection10_Click"
+                        Opacity="0.0" />
+                <Button x:Name="GameBoardSection20"
+                        Grid.Row="1"
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Width="117"
+                        Height="94"
+                        Margin="0,91,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Click="GameBoardSection20_Click"
                         Opacity="0.0" />
                 <Button x:Name="GameBoardSection11"
                         Grid.Row="1"
@@ -81,6 +93,7 @@
                         Height="94"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
+                        Click="GameBoardSection11_Click"
                         Opacity="0.0" />
                 <Button x:Name="GameBoardSection12"
                         Grid.Row="1"
@@ -89,22 +102,18 @@
                         Height="94"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
-                        Opacity="0.0" />
-                <Button x:Name="GameBoardSection20"
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        Width="117"
-                        Height="94"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
+                        Click="GameBoardSection12_Click"
                         Opacity="0.0" />
                 <Button x:Name="GameBoardSection21"
                         Grid.Row="2"
                         Grid.Column="1"
+                        Grid.ColumnSpan="2"
                         Width="117"
                         Height="94"
+                        Margin="5,0,0,-1"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
+                        Click="GameBoardSection21_Click"
                         Opacity="0.0" />
                 <Button x:Name="GameBoardSection22"
                         Grid.Row="2"
@@ -114,6 +123,7 @@
                         Margin="0,0,0,-1"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
+                        Click="GameBoardSection22_Click"
                         Opacity="0.0" />
             </Grid>
             <Label x:Name="label"
@@ -123,7 +133,8 @@
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    Content="Who's Turn"
-                   FontSize="8"
+                   FontSize="9.333"
+                   FontWeight="Bold"
                    RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>
@@ -136,10 +147,12 @@
             </Label>
             <Label x:Name="PlayerTurnLable"
                    Width="64"
-                   Margin="0,29,0,0"
+                   Margin="-1,29,0,0"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
-                   Content="" />
+                   Content=""
+                   FontSize="9.333"
+                   RenderTransformOrigin="0.006,0.74" />
             <Label x:Name="Player2Lable"
                    Width="64"
                    Margin="0,204,0,0"
@@ -186,7 +199,6 @@
             </RadioButton>
 
             <RadioButton x:Name="Player2CircleRB"
-                         Grid.RowSpan="2"
                          Width="64"
                          Margin="0,225,0,0"
                          HorizontalAlignment="Left"
@@ -203,9 +215,8 @@
                 </WrapPanel>
             </RadioButton>
             <RadioButton x:Name="Player2XRB"
-                         Grid.Row="1"
                          Width="64"
-                         Margin="0,10.765,0,0"
+                         Margin="0,242,0,0"
                          HorizontalAlignment="Left"
                          VerticalAlignment="Top"
                          Click="Player2SelectedX"
@@ -219,15 +230,27 @@
                            Source="Resources/PlayerX.png" />
                 </WrapPanel>
             </RadioButton>
-
+            <Label x:Name="label1"
+                   Margin="433,10,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Content="Turns"
+                   FontWeight="Bold" />
+            <Label x:Name="TurnsLable"
+                   Margin="444,29,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Content="0"
+                   FontSize="9.333" />
         </Grid>
-        <Button x:Name="button"
+        <Button x:Name="StartBtn"
                 Width="65"
                 Height="24"
                 Margin="10,275,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="Start Game" Click="button_Click">
+                Click="button_Click"
+                Content="Start Game">
             <Button.Background>
                 <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
                     <GradientStop Offset="0" Color="#FF99FF00" />
@@ -235,5 +258,11 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Grid Width="59"
+              Height="114"
+              Margin="10,161,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top" />
     </Grid>
+
 </Window>
